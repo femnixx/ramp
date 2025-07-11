@@ -4,7 +4,9 @@ import LandingPage from "./pages/LandingPage";
 function App() {
   return (
     <>
-      <LandingPage></LandingPage>
+      <div className="w-screen h-screen bg-[#17332D]">
+        <LandingPage></LandingPage>
+      </div>
     </>
   );
 }

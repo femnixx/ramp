@@ -1,8 +1,16 @@
 import "../App.css";
 import React from "react";
+import NavbarComponent from "../components/NavbarComponent";
 
 const LandingPage = () => {
-  return <div className="text-black bg-green-800">LandingPage</div>;
+  return (
+    <>
+      <div className="w-full h-full">
+        {/* navbar */}
+        <NavbarComponent></NavbarComponent>
+      </div>
+    </>
+  );
 };
 
 export default LandingPage;
