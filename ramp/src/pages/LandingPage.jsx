@@ -15,10 +15,10 @@ const LandingPage = () => {
         {/* navbar */}
         <NavbarComponent></NavbarComponent>
         {/* Headers */}
-        <div className="flex flex-col text-wrap px-2 items-center text-center my-16 min-lg:w-full ">
-          <div className="flex flex-col items-center w-1/2">
-            <h1 className="w-screen">Spending made smarter</h1>
-            <p className=" py-4 min-lg:text-wrap text-break text-balance w-[400px]">
+        <div className="flex flex-col text-wrap px-2 items-center text-center my-16 min-lg:w-full">
+          <div className="flex flex-col items-center w-1/2 max-md:text-sm px-2">
+            <h1 className="w-screen p-2">Spending made smarter</h1>
+            <p className=" py-4 min-lg:text-wrap text-break text-balance max-lg:w-[300px]">
               Easy-to-use cards, spend limits, approval flows, vendor payments,
               and more - plus an average savings of 5%
             </p>
