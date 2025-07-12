@@ -24,14 +24,14 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        {/* why ramp, work email and get started */}
+        {/* why ramp, work email and get started sm */}
         <div className="flex flex-col items-center -mt-10">
-          <div className="flex gap-x-3 min-md:hidden">
+          <div className="flex gap-x-3 min-sm:hidden">
             <h3>Why Ramp</h3>
             <img src={ArrowRight} alt="arrow right" />
           </div>
           {/* small-md screens */}
-          <div className="py-2 max-md:flex-col items-center w-full px-5 min-md:hidden">
+          <div className="py-2 max-md:flex-col items-center w-full px-5 min-sm:hidden">
             <div className="text-[#1C1B17] bg-white/40 text-center py-3 rounded-lg">
               <p>What's your work email?</p>
             </div>
@@ -40,7 +40,7 @@ const LandingPage = () => {
             </div>
           </div>
           {/* lg<= screens */}
-          <div className="max-md:hidden flex gap-x-3 items-center text-center">
+          <div className="max-sm:hidden flex gap-x-3 items-center text-center">
             {/* stars and ratings */}
             <div className="flex bg-[#2F4842]/50 px-2 gap-x-2 rounded-full py-1  justify-center">
               <div>
@@ -55,7 +55,7 @@ const LandingPage = () => {
             </div>
           </div>
           {/* work email and get started LG */}
-          <div className=" max-md:hidden gap-x-24 flex bg-white/50 justify-between  rounded-lg items-center  mt-10 pr-1 text-[#1C1B17]">
+          <div className=" max-sm:hidden gap-x-24 flex bg-white/50 justify-between  rounded-lg items-center  mt-10 pr-1 text-[#1C1B17]">
             <p className="py-3 pl-2">What's your work email?</p>
             <div className="bg-[#E4F222] py-2 rounded-lg p-2">
               <p>Get started</p>
@@ -65,11 +65,15 @@ const LandingPage = () => {
             No personal credit checks or founder guarantee.
           </p>
         </div>
-        <div className=" flex bg-transparent mt-7 w-full content-center items-center justify-center min-lg:hidden">
-          <img src={Headerpicture} alt="header pictures" className="" />
+        <div className=" flex bg-transparent w-full min-lg:hidden mt-20 justify-center">
+          <img
+            src={Headerpicture}
+            alt="header pictures"
+            className="min-md:w-md h-auto"
+          />
         </div>
         {/* bottom headers for LG */}
-        <div className="flex mt-16 max-lg:hidden max-w-screen-xl mx-auto overflow-hidden gap-x-4 px-4 items-center justify-center h-auto max-h-[320px]">
+        <div className="flex mt-16 max-lg:hidden max-w-screen-xl mx-auto overflow-hidden gap-x-4 px-4 items-center justify-center h-auto max-h-[320px] max-sm:hidden">
           <img
             src={Header1}
             alt="Header 1"
