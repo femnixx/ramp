@@ -6,8 +6,8 @@ import hamburger from "../assets/hamburger-icon.svg";
 export const NavbarComponent = () => {
   return (
     <>
+      {/* small-medium screens */}
       <div className="flex w-full bg-white/50 justify-between min-lg:hidden py-3 items-center">
-        {/* small-medium screens */}
         <div className="pl-5">
           <img src={ramp} alt="ramp logo" />
         </div>
@@ -20,6 +20,31 @@ export const NavbarComponent = () => {
           </div>
         </div>
       </div>
+      {/* lg screens */}
+      <div className="flex w-full bg-white/50 justify-between max-lg:hidden py-3 px-5 ">
+        <div className="flex">
+          <img src={ramp} alt="ramp" />
+        </div>
+        <div className="flex justify-between w-1/2 text-black items-center">
+          <p>Products</p>
+          <p>Solutions</p>
+          <p>Customers</p>
+          <p>Resources</p>
+          <p>Pricing</p>
+        </div>
+        <div className="flex gap-x-3 text-black">
+          <div className="bg-transparent border-1  border-white/50 px-5 py-1 rounded-lg">
+            <p>Sign in</p>
+          </div>
+          <div className="bg-[#E4F222] rounded-lg px-5 py-1">
+            <p>See a demo</p>
+          </div>
+        </div>
+      </div>
+      {/* xl screens */}
+      {/* <div className="flex w-full bg-white/50 justify-between max-md:hidden py-3 px-5 max-xl:hidden">
+        <p>hi there</p>
+      </div> */}
     </>
   );
 };
