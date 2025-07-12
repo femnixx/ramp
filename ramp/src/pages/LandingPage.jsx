@@ -69,7 +69,7 @@ const LandingPage = () => {
           <img
             src={Headerpicture}
             alt="header pictures"
-            className="min-md:w-md h-auto"
+            className="min-md:w-md-auto"
           />
         </div>
         {/* bottom headers for LG */}

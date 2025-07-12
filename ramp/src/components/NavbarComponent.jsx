@@ -7,7 +7,7 @@ export const NavbarComponent = () => {
   return (
     <>
       {/* small-medium screens */}
-      <div className="flex w-full bg-white/50 justify-between min-lg:hidden py-3 items-center">
+      <div className="flex w-full bg-white/50 justify-between  py-3 items-center min-lg:hidden">
         <div className="pl-5">
           <img src={ramp} alt="ramp logo" />
         </div>
@@ -41,10 +41,6 @@ export const NavbarComponent = () => {
           </div>
         </div>
       </div>
-      {/* xl screens */}
-      {/* <div className="flex w-full bg-white/50 justify-between max-md:hidden py-3 px-5 max-xl:hidden">
-        <p>hi there</p>
-      </div> */}
     </>
   );
 };
